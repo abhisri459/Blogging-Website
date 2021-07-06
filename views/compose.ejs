@@ -1,0 +1,28 @@
+<%- include("partials/header"); -%>
+
+<h1>Compose</h1>
+
+<form action="/compose" method="post">
+    <label for=""><h4>Title</h4></label>
+  <div class="input-group input-group-md">
+    <input
+      type="text"
+      class="form-control"
+      aria-label="Sizing example input"
+      aria-describedby="inputGroup-sizing-lg"
+      name="postTitle"
+      autocomplete="off"
+      style="font-size:18px;"
+      
+    />
+  </div>
+  <br>
+  <label for=""><h4>Post</h4></label>
+  <div class="input-group">
+    <textarea class="form-control" aria-label="With textarea" name="postBody" autocomplete="off" rows="5" cols="150" style="font-size:15px;"></textarea>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-lg btn-primary "><b>Publish</b></button>
+</form>
+
+<%- include("partials/footer"); -%>
